@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.completion-note {
+  width: 96px;
+  height: 96px;
+  background: url('completion_widget.png') 0 0;
+  &.tainted {
+    background-position-x: -96px;
+  }
+  &.wrinkled {
+    background-position-y: -128px;
+  }
+  &.bloodied {
+    background-position-y: -224px;
+  }
+}
+
+div.completion-item {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 96px;
+  height: 96px;
+  a {
+    display: block;
+    width: 16.6666%;
+    height: 16.6666%;
+    position: absolute;
+  }
+  &.polaroid {
+    background: url('polaroid_mark.png');
+    &.hard {
+      background: url('polaroid_mark_hard.png')
+    }
+    a {
+      top: 20px;
+      left: 49px;
+      height: 15px;
+      transform: rotate(11deg);
+    }
+  }
+  &.negative {
+    background: url('negative_mark.png');
+    &.hard {
+      background: url('negative_mark_hard.png')
+    }
+    a {
+      top: 34px;
+      left: 36px;
+      transform: rotate(11deg);
+      height: 14px;
+    }
+  }
+  &.cross {
+    background: url('cross_mark.png');
+    &.hard {
+      background: url('cross_mark_hard.png')
+    }
+    a {
+      top: 17px;
+      left: 36px;
+      transform: rotate(11deg);
+      height: 16px;
+      width: 13px;
+    }
+  }
+  &.invertedCross {
+    background: url('inverted_cross_mark.png');
+    &.hard {
+      background: url('inverted_cross_mark_hard.png')
+    }
+    a {
+      top: 24px;
+      left: 24px;
+      transform: rotate(11deg);
+      height: 15px;
+      width: 13px;
+    }
+  }
+  &.heart {
+    background: url('heart_mark.png');
+    &.hard {
+      background: url('heart_mark_hard.png')
+    }
+    a {
+      top: 6px;
+      left: 22px;
+      transform: rotate(11deg);
+      height: 16px;
+      width: 15px;
+    }
+  }
+  &.star {
+    background: url('star_mark.png');
+    &.hard {
+      background: url('star_mark_hard.png')
+    }
+    a {
+      top: 37px;
+      left: 13px;
+      transform: rotate(11deg);
+      height: 15px;
+      width: 16px;
+    }
+  }
+  &.brimstone {
+    background: url('brimstone_mark.png');
+    &.hard {
+      background: url('brimstone_mark_hard.png')
+    }
+  }
+  &.hush {
+    background: url('hush_mark.png');
+    &.hard {
+      background: url('hush_mark_hard.png')
+    }
+  }
+  &.cent {
+    background: url('cent_mark.png');
+    &.hard {
+      background: url('cent_mark_hard.png')
+    }
+  }
+  &.knife {
+    background: url('knife_mark.png');
+    &.hard {
+      background: url('knife_mark_hard.png')
+    }
+  }
+  &.note {
+    background: url('note_mark.png');
+    &.hard {
+      background: url('note_mark_hard.png')
+    }
+    a {
+      top: 53px;
+      left: 41px;
+    }
+  }
+}
