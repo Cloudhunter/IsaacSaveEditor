@@ -38,6 +38,9 @@
 }
 
 .completion-note {
+  transform: scale(5);
+  transform-origin: top left;
+  image-rendering: pixelated;
   width: 96px;
   height: 96px;
   background: url('completion_widget.png') 0 0;
