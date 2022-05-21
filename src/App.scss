@@ -58,24 +58,10 @@ div.completion-item {
   top: 0px;
   width: 96px;
   height: 96px;
-  a {
-    display: block;
-    width: 16.6666%;
-    height: 16.6666%;
-    position: absolute;
-    background-color: black;
-    opacity: 0.5;
-  }
   &.polaroid {
     background: url('polaroid_mark.png');
     &.hard {
       background: url('polaroid_mark_hard.png')
-    }
-    a {
-      top: 20px;
-      left: 49px;
-      height: 15px;
-      transform: rotate(11deg);
     }
   }
   &.negative {
@@ -83,24 +69,11 @@ div.completion-item {
     &.hard {
       background: url('negative_mark_hard.png')
     }
-    a {
-      top: 34px;
-      left: 36px;
-      transform: rotate(11deg);
-      height: 14px;
-    }
   }
   &.cross {
     background: url('cross_mark.png');
     &.hard {
       background: url('cross_mark_hard.png')
-    }
-    a {
-      top: 17px;
-      left: 36px;
-      transform: rotate(11deg);
-      height: 16px;
-      width: 13px;
     }
   }
   &.invertedCross {
@@ -108,38 +81,18 @@ div.completion-item {
     &.hard {
       background: url('inverted_cross_mark_hard.png')
     }
-    a {
-      top: 24px;
-      left: 24px;
-      transform: rotate(11deg);
-      height: 15px;
-      width: 13px;
-    }
   }
   &.heart {
     background: url('heart_mark.png');
     &.hard {
       background: url('heart_mark_hard.png')
     }
-    a {
-      top: 6px;
-      left: 22px;
-      transform: rotate(11deg);
-      height: 16px;
-      width: 15px;
-    }
+
   }
   &.star {
     background: url('star_mark.png');
     &.hard {
       background: url('star_mark_hard.png')
-    }
-    a {
-      top: 37px;
-      left: 13px;
-      transform: rotate(11deg);
-      height: 15px;
-      width: 16px;
     }
   }
   &.brimstone {
@@ -176,4 +129,56 @@ div.completion-item {
       left: 41px;
     }
   }
+  &.clickers {
+    width: 96px;
+    height: 96px;
+    a {
+      display: block;
+      width: 16.6666%;
+      height: 16.6666%;
+      position: absolute;
+      background-color: black;
+      opacity: 0.5;
+      &.polaroid {
+        top: 20px;
+        left: 49px;
+        height: 15px;
+        transform: rotate(11deg);
+      }
+      &.negative {
+        top: 34px;
+        left: 36px;
+        transform: rotate(11deg);
+        height: 14px;
+      }
+      &.cross {
+        top: 17px;
+        left: 36px;
+        transform: rotate(11deg);
+        height: 16px;
+        width: 13px;
+      }
+      &.invertedCross {
+        top: 24px;
+        left: 24px;
+        transform: rotate(11deg);
+        height: 15px;
+        width: 13px;
+      }
+      &.heart {
+        top: 6px;
+        left: 22px;
+        transform: rotate(11deg);
+        height: 16px;
+        width: 15px;
+      }
+      &.star {
+        top: 37px;
+        left: 13px;
+        transform: rotate(11deg);
+        height: 15px;
+        width: 16px;
+      }
+    }
+  }  
 }
